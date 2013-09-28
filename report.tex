@@ -1,0 +1,431 @@
+% После процента идут комментарии
+
+% Класс документа
+\documentclass[11pt,a4paper,twoside,listtotoc,bibtotoc]{report}
+% Размеры полей
+\usepackage[top=1in, bottom=1.3in, left=1in, right=1in]{geometry}
+
+% Кодировка файла
+\usepackage[utf8]{inputenc}
+% Переносы для русского языка
+\usepackage[russian]{babel}
+
+
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{epstopdf}
+\usepackage[unicode]{hyperref}
+\usepackage{float}
+
+\usepackage{longtable}
+
+
+\hypersetup{
+    colorlinks,
+    breaklinks,
+    linkcolor=[rgb]{0.07, 0.03, 0.56},
+    citecolor=[rgb]{0.1, 0.45, 0.27},
+    %colorlinks=true,% hyperlinks will be coloured
+    urlcolor=[rgb]{0.07, 0.03, 0.56},
+    %linkbordercolor=[rgb]{0.07, 0.03, 0.56}
+}
+
+
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyhead[LE]{\thepage}
+\fancyhead[CE]{{\normalfont \leftmark}}
+\fancyhead[CO]{{\normalfont \rightmark}}
+\fancyhead[RO]{\thepage}
+\fancyfoot{}
+
+\makeatletter
+\let\ps@plain\ps@empty
+\makeatother
+
+% Отступ абзаца после заголовка
+%\usepackage{indentfirst}
+
+%\usepackage{titlesec}
+\usepackage[toctitles]{titlesec}
+\renewcommand{\thesection}{\arabic{section}}
+% Добавить символ параграфа в нумерации section
+\let\oldthesection\thesection \renewcommand\thesection{\S \oldthesection}
+
+\usepackage{amsmath}
+% Нумерация в пределах параграфа
+\numberwithin{equation}{section}
+% Изменить формат нумерации формул с (1.2) на (2)
+\renewcommand{\theequation}{\arabic{equation}}
+
+\usepackage{cmap}
+% Разные математические шрифты
+% Например, для обозначения множества вещественных чисел
+\usepackage{amsfonts}
+% Математические символы
+\usepackage{amssymb}
+% Для изменения символов нумерации
+\usepackage{enumerate}
+% Для нумерованных списков
+\usepackage{enumitem}
+% Декартов крест
+\DeclareFontFamily{U}{mathx}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathx}{m}{n}{
+      <5> <6> <7> <8> <9> <10>
+      <10.95> <12> <14.4> <17.28> <20.74> <24.88>
+      mathx10
+      }{}
+\DeclareSymbolFont{mathx}{U}{mathx}{m}{n}
+\DeclareMathSymbol{\bigtimes}{1}{mathx}{"91}
+
+\usepackage{array}
+
+% Теоремы
+\usepackage{amsthm}
+    \newtheorem*{statement}{Утверждение}
+    \newtheorem*{problem}{Задача}
+    \newtheorem*{definition}{Определение}
+
+    \theoremstyle{definition}
+    \newtheorem{example}{Пример}[section]
+    \renewcommand{\theexample}{\arabic{example}}
+    \newtheorem*{example*}{Пример}
+
+    \theoremstyle{plain}
+    \newtheorem{theorem}{Теорема}[section]
+    \renewcommand{\thetheorem}{\arabic{theorem}}
+    \newtheorem*{theorem*}{Теорема}
+
+    \newtheorem{new_note}{Замечание}[section]
+
+    \newtheorem{note}{Замечание}[section]
+    \renewcommand{\thenote}{\arabic{note}}
+
+
+
+    \newtheorem{lemma}{Лемма}[section]
+    \renewcommand{\thelemma}{\arabic{lemma}}
+    \newtheorem*{lemma*}{Лемма}
+
+    \newtheorem*{note*}{Замечание}
+
+    \newtheorem{formulation}{Постановка задачи}
+
+    \newtheorem*{formulation*}{Постановка задачи}
+
+    \newtheorem{cons}{Следствие}[section]
+    \renewcommand{\thecons}{\arabic{cons}}
+    \newtheorem*{cons*}{Следствие}
+
+    \makeatletter \renewenvironment{proof}[1][\proofname] {\par\pushQED{\qed}\normalfont\topsep6\p@\@plus6\p@\relax\trivlist\item
+    [\hskip\labelsep\bfseries#1\@addpunct{.}]\ignorespaces}
+    {\popQED\endtrivlist\@endpefalse} \makeatother
+
+    \makeatletter \newenvironment{solution}[1][Решение] {\par\pushQED{\qed}\normalfont\topsep6\p@\@plus6\p@\relax\trivlist\item
+    [\hskip\labelsep\bfseries#1\@addpunct{.}]\ignorespaces}
+    {\popQED\endtrivlist\@endpefalse} \makeatother
+
+% Новая строка после названия пункта
+\makeatletter
+\renewcommand\paragraph{%
+   \@startsection{paragraph}{4}{0mm}%
+      {-\baselineskip}%
+      {.5\baselineskip}%
+      {\normalfont\large\bfseries}}
+\makeatother
+
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+% Для систем уравнений
+\usepackage{cases}
+
+\makeatletter
+\newenvironment{sqcases}{%
+  \matrix@check\sqcases\env@sqcases
+}{%
+  \endarray\right.%
+}
+\def\env@sqcases{%
+  \let\@ifnextchar\new@ifnextchar
+  \left\lbrack
+  \def\arraystretch{1.2}%
+  \array{@{}l@{\quad}l@{}}%
+}
+\makeatother
+
+\usepackage{mathtools}
+% Норма вектора
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}
+% Целая часть сверху
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+% Оператор sgn
+\DeclareMathOperator{\sgn}{sgn}
+% Оператор diag
+\DeclareMathOperator{\diag}{diag}
+%\renewcommand\labelitemi{---}
+%\fancyhead{}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[RE]{\leftmark}
+%\fancyhead[LO]{\rightmark}
+%
+%
+%\setcounter{secnumdepth}{1}
+%\setcounter{tocdepth}{1}
+%\newcommand{\bigO}[1]{\ensuremath{\operatorname{O}\bigl(#1\bigr)}}
+%
+
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+\begin{document}
+\pagestyle{empty}
+%
+\begin{center}
+    \vspace*{-0.7in}
+    \includegraphics[width=0.5\textwidth]{msu.eps}\\
+    {\scshape Московский государственный университет имени М.\,В. Ломоносова}\\
+    Факультет вычислительной математики и кибернетики\\
+    Кафедра АСВК\\
+    \vfill
+    %{\LARGE }\\
+    %\vspace{0.55cm}
+    {\Huge\bfseries Отчет по второму заданию курса ООАП.}\\
+    \vspace{0.8cm}
+    {\LARGE Вариант №$4$}\\
+    {\LARGE <<Онлайновая билетная касса>>}
+
+\end{center}
+%
+\vspace{6cm}
+\begin{flushright}
+    \large
+    \textit{Выполнил:}\\
+    Селецкий С.\,В., $421$ группа\\
+\end{flushright}
+%
+\vfill
+%
+\begin{center}
+    Москва, 2013
+\end{center}
+%
+%
+\newpage
+%
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\newpage
+\phantomsection
+\pagestyle{plain}
+%
+\section{Постановка задачи}
+%
+Онлайновая касса <<чух-чух.рф>> представляет собой web-сайт службы
+бронирования и доставки билетов на поезда дальнего следования.
+Перед тем, как впервые воспользоваться услугами кассы, клиент должен
+зарегистрироваться. В ходе регистрации он указывает данные о себе
+(фио, телефон, адрес электронной почты, паспортные данные) и получает
+логин и пароль (логины и пароли разных клиентов не должны совпадать).
+
+Войдя в систему, клиент может ознакомиться с расписанием движения
+поездов между нужными ему населёнными пунктами, выбрать станцию и
+дату отправления, а также номер поезда. Получив от системы сведения
+о билетах, имеющихся в наличии, пользователь может забронировать
+нужное ему количество билетов. Билеты бывают разных типов: плацкартные,
+купейные ($1$, $2$ и $3$ класса), сидячие, в мягкий вагон, в вагон люкс
+и т. п. Места могут быть верхними, нижними, боковыми, в зависимости от
+расположения в вагоне. Цена билета зависит от маршрута следования,
+типа поезда (фирменный/скорый/пассажирский), типа вагона, в котором расположено
+пассажирское место, и расположения места в вагоне. Билеты могут быть
+выкуплены в течение трех суток с момента бронирования, но не позднее
+двух суток до отправления поезда. Клиент может самостоятельно выкупить
+забронированные билеты, приехав в офис, или заказать доставку билетов курьером,
+сделав пометку в заявке и указав адрес доставки. Стоимость доставки зависит от
+дальности: центр/спальный район/дальний пригород. Клиент может получить
+информацию обо всех своих заявках с web-страницы онлайновой кассы.
+
+Заявки клиентов хранятся в системе. В каждой указаны: сведения о клиенте,
+сведения об одном или более билетах (к одной заявке может относиться
+несколько билетов на одно и то же имя), общая стоимость билетов в
+заявке, время создания заявки, время оплаты, вид доставки
+(самовывоз/курьер), адрес доставки, стоимость доставки, статус заявки
+(новая/рабочая/оплаченная/аннулированная). По истечении $12$ месяцев с
+момента создания заявки данные автоматически удаляются из системы.
+
+В обязанности работников онлайновой кассы входит внесение в систему сведений
+о расписании поездов, стоимости проезда и об имеющихся в наличии местах, на
+которые могут быть куплены билеты. Некоторые поезда ходят ежедневно. Другие
+назначаются только в определённый день (определённые дни) недели. Также есть
+отдельные поезда, назначаемые на конкретные дни года. Данные о билете содержат
+уникальный номер билета, даты и станции отправления и прибытия, тип билета,
+номер места, цену билета, статус билета
+(место свободно/забронировано/продано/передано для реализации в кассы на вокзалах).
+По истечении 12 месяцев
+с даты, указанной в билете, данные автоматически удаляются из системы.
+
+Работник кассы, получив новую заявку клиента, связывается с ним для подтверждения
+и уточнения мест. Согласовав с клиентом места, работник делает пометку о бронировании
+билетов в системе (тем самым уменьшается количество билетов, имеющихся в наличии)
+и меняет статус заявки на <<рабочая>>. После оплаты и/или доставки <<рабочей>> заявки
+билеты из заявки помечаются как проданные, а заявка --- как оплаченная. За $2$ суток
+до отправления поезда все непроданные билеты передаются для реализации в обычные
+кассы, в системе они автоматически помечаются как <<передан для реализации>>,
+заявки на них аннулируются, клиенты, не успевшие оплатить заказанные билеты,
+информируются о снятии брони. Через $4$ суток после создания все неоплаченные <<рабочие>>
+заявки автоматически аннулируются, бронирование с билетов снимается, клиентам
+посылается соответствующее сообщение. Также должна быть возможность аннулирования
+заявок вручную работниками онлайновой кассы. При аннулировании заявки вручную работник
+должен уведомить клиента, изменить статус заявки, снять бронирование билетов
+(количество билетов в наличии возрастает).
+
+%
+\newpage
+%
+%
+\section{Глоссарий}
+%
+%
+\begin{center}
+%
+\begin{longtable}[h!]{ | p{0.3\linewidth} || p{0.7\linewidth} |}
+%
+    \hline
+    
+    {\bfseries Система} $(System)$ & Система службы бронирования и доставки билетов, предоставляющая услуги клиентам. \\
+    \hline
+    
+    {\bfseries Клиент} $(Client)$ & Лицо, пользующееся услугами системы. \\
+    \hline
+    
+    {\bfseries База данных клиентов} $(ClientsDB)$
+        &
+        База данных, содержащая информацию о клиентах, вносимую ими при регистрации (ФИО, 
+        номер телефона, адрес электронной почты, паспортные данные). А также автоматически 
+        генерируемую информацию (уникальный логин, пароль).\\
+    \hline
+    
+    {\bfseries Расписание} $(Schedule)$ & Содержит всю информацию о движении поездов между двумя станциями:
+        %
+        \begin{itemize}
+            \item номера поездов, которые останавливаются на этих станциях;
+            \item стоимость проезда на каждом поезде;
+            \item дата и время прибытия каждого поезда на станции и отправки с них.
+        \end{itemize}
+        %
+    \\
+    \hline
+    {\bfseries Список расписаний} $(SchedulesList)$ & Хранит расписания между всеми парами станций. \\
+    \hline
+    {\bfseries Место} $(Seat)$ & Место в поезде:
+    %
+    \begin{itemize}
+        \item тип места (верхнее, нижнее или боковое);
+        \item номер места в вагоне;
+        \item номер вагона в поезде.
+    \end{itemize}
+     \\
+    \hline
+    {\bfseries Поезд} $(Train)$ & Хранит информацию о поезде:
+        %
+        \begin{itemize}
+            \item номер поезда;
+            \item тип поезда (фирменный~/ скорый~/ пассажирский);
+            \item для каждой станции хранится список билетов, действующих на этой станции;
+            \item список мест в поезде;
+            \item список посещаемых станций;
+            \item времена и даты прибытия и отправки от каждой станции.
+        \end{itemize}
+        %
+    \\
+    \hline
+    {\bfseries Список поездов} $(TrainsList)$ & Список всех экземпляров типа <<Поезд>>. \\
+    \hline
+    {\bfseries Билет} $(Ticket)$ & Содержит информацию о билете:
+        %
+        \begin{itemize}
+            \item уникальный номер билета;
+            \item дата и время отправления и прибытия;
+            \item станции отправления и прибытия;
+            \item уникальный номер места (т.е. тройка: номер поезда, номер вагона, номер места в вагоне);
+            \item тип билета (плацкартный, купейный ($1$, $2$ и $3$ класса), сидячий, в мягкий вагон, в вагон люкс и т. п.);
+            \item цена билета (зависит от стоимости маршрута следования, типа поезда, типа билета и типа места);
+            \item статус билета (место свободно~/ забронировано~/ продано~/ передано для реализации в кассы на вокзалах);
+            \item данные клиента, купившего или забронировавшего билет (если место продано или забронировано);
+            \item время истечения срока бронирования билета (в течение трёх суток с момента бронирования, но не позднее двух
+                суток до отправления.
+        \end{itemize}
+        %
+    \\
+    \hline
+    {\bfseries База данных всех билетов} $(TicketsDB)$ & Содержит информацию о всех билетах в системе. \\
+    \hline
+    {\bfseries Имеющиеся в наличии билеты} $(AvailableTickets)$ & Хранит информацию о доступных для продажи в системе билетах. \\
+    \hline
+    {\bfseries База данных заявок} $(RequestsDB)$ & Все заявки, хранимые в системе. \\
+    \hline
+    {\bfseries Заявка} $(Request)$ & Хранит информацию о заявке клиента:
+        %
+        \begin{itemize}
+            \item сведения о клиенте;
+            \item сведения об одном и более билетах (к одной заявке может относиться несколько билетов на одно
+                и то же имя);
+            \item общая стоимость билетов в заявке;
+            \item время создания заявки;
+            \item время оплаты;
+            \item вид доставки (самовывоз/курьер);
+            \item адрес доставки;
+            \item стоимость доставки;
+            \item статус заявки (новая~/ рабочая~/ оплаченная~/ аннулированная);
+            \item время истечения <<срока годности>> заявки (по истечении $12$ месяцев с момента создания
+                заявки данные автоматически удаляются из системы).
+        \end{itemize}
+        %
+    \\
+    \hline
+    {\bfseries Дальность доставки} $(Distance)$ & Дальность доставки билета. Бывает центром, спальным районом и дальним пригородом. \\
+    \hline
+    {\bfseries Работники онлайновой кассы} $(Staff)$ & В обязанности работников онлайновой кассы входит внесение в систему сведений
+        о расписании поездов, стоимости проезда и об имеющихся в наличии местах, на которые могут быть куплены билеты. \\
+    \hline
+
+    \if false
+    {\bfseries ФИО} $(Name)$ & ФИО клиента, указываемые им при регистрации в службе бронирования. Хранится в базе клиентов. \\
+    \hline
+    {\bfseries Телефон} $(PhoneNumber)$ & Телефонный номер клиента. Хранится в базе клиентов.\\
+    \hline
+    {\bfseries Адрес электронной почты} $(Email)$ & Адрес электронной почты клиента. Хранится в базе клиентов.\\
+    \hline
+    {\bfseries Паспортные данные} $(Passport)$ & Паспортные данные клиента. Хранятся в базе клиентов. \\
+    \hline
+    {\bfseries Логин} $(Login)$ & Уникальный логин клиента. Генерируется системой автоматически. Хранится в базе клиентов. \\
+    \hline
+    {\bfseries Пароль} $(Password)$ & Пароль клиента. Генерируется системой автоматически. Хранится в базе клиентов. \\
+    \hline
+    \fi
+\end{longtable}
+%
+\end{center}
+%
+%
+\newpage
+%
+%
+\section{Варианты использования}
+%
+%
+\newpage
+%
+
+
+\end{document} 
