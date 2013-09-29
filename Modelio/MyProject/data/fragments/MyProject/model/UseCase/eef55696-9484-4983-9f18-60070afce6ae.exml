@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Проверить статус билета" version="3">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Выбрать билет" version="3">
   <DEPS>
-    <ID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+    <ID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
     <EXTID name="База билетов" mc="Actor" uid="4d7f2c0d-7764-4267-ba82-8e09cff30b07"/>
     <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
     <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
@@ -11,7 +11,7 @@
     <FOREIGNID name="precondition" mc="NoteType" uid="00bc0b8c-0000-2515-0000-000000000000"/>
   </DEPS>
   <OBJECT>
-    <ID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+    <ID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
     <PID name="Бронирование и доставка билетов" mc="Class" uid="15c5d71d-4d06-4f8c-9b45-c003c014cede"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -19,14 +19,14 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Проверить статус билета]]></ATT>
+      <ATT name="Name"><![CDATA[Выбрать билет]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
         <OBJECT>
           <ID name="" mc="AssociationEnd" uid="68db50e4-6138-481a-8d22-ffbf390fa162"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -49,7 +49,7 @@
             <COMP relation="Opposite">
               <OBJECT>
                 <ID name="" mc="AssociationEnd" uid="79b3382e-2603-4735-b56a-c0b1264e81c5"/>
-                <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+                <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -72,7 +72,7 @@
                   <COMP relation="Association">
                     <OBJECT>
                       <ID name="" mc="Association" uid="b4de640a-bd22-4eaf-b069-7afc43f076df"/>
-                      <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+                      <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -86,7 +86,7 @@
             <COMP relation="Association">
               <OBJECT>
                 <ID name="" mc="Association" uid="b4de640a-bd22-4eaf-b069-7afc43f076df"/>
-                <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+                <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -100,7 +100,7 @@
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Note" uid="b0cbbbed-923c-459b-8253-40576a5c0200"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="Name"></ATT>
@@ -114,7 +114,7 @@
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Note" uid="06cdd6d6-242b-4f35-b5a3-a052ac044f29"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="Name"></ATT>
@@ -128,7 +128,7 @@
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Note" uid="0dfabb66-41d2-4559-9b47-9b7f26d0a1fb"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="Name"></ATT>
@@ -142,7 +142,7 @@
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Note" uid="22ff000c-3976-40a3-8e3f-9d7bdab33567"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="Name"></ATT>
@@ -156,7 +156,7 @@
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Note" uid="f384b9e5-5704-43d5-923c-724906944328"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="Name"></ATT>
@@ -170,7 +170,7 @@
         </OBJECT>
         <OBJECT>
           <ID name="" mc="Note" uid="9113cb13-8ac0-462c-9a42-ebd3ad0f8f5f"/>
-          <PID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+          <PID name="Выбрать билет" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
           <ATTRIBUTES>
             <ATT name="Content"><![CDATA[...]]></ATT>
             <ATT name="Name"></ATT>
