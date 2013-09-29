@@ -1,0 +1,673 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delete" version="3">
+  <DEPS>
+    <ID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+    <COMPID name="Delete" mc="SequenceDiagram" uid="21d88661-7b65-468f-af17-d40e0ea46856"/>
+    <EXTID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+    <EXTID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
+    <EXTID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+    <EXTID name="Statement" mc="Interface" uid="2fc956fe-1bb4-44ec-886f-d8e9f4df07ee"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+    <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Delete]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="FormalGate">
+        <OBJECT>
+          <ID name="" mc="Gate" uid="8e9acccb-e8cb-47e2-82b2-f37d01c80d99"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">100</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="delete" mc="Message" uid="e625b103-7e74-4f21-a467-6479492a89e1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[obj]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[delete]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="1381f161-784d-4ffe-b693-fc9720bc4ab0"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="delete" mc="Operation" uid="25c43f01-6c62-47e2-b809-2b555b40e529"/>
+                      <PID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Fragment">
+        <OBJECT>
+          <ID name="" mc="Gate" uid="8e9acccb-e8cb-47e2-82b2-f37d01c80d99"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">100</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="delete" mc="Message" uid="e625b103-7e74-4f21-a467-6479492a89e1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"><![CDATA[obj]]></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"><![CDATA[delete]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="1381f161-784d-4ffe-b693-fc9720bc4ab0"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="delete" mc="Operation" uid="25c43f01-6c62-47e2-b809-2b555b40e529"/>
+                      <PID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="1381f161-784d-4ffe-b693-fc9720bc4ab0"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="c5cd7dcf-8dcf-4dd8-8efd-ad8babc72906"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="cb18532f-71df-419e-9444-6cb640c0b51f"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">221</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="c5cd7dcf-8dcf-4dd8-8efd-ad8babc72906"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="cb18532f-71df-419e-9444-6cb640c0b51f"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a5ad62c5-0f23-4fa9-a512-c37bb4295b5c"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">112</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="f70037f2-1e88-4809-8d1e-15e8017f7552"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="d7f87eb1-2e6f-4721-b831-32aed30960a0"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="createStatement" mc="Operation" uid="ae5707a9-8039-40b5-9ba8-c4aed4d98975"/>
+                      <PID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="d7f87eb1-2e6f-4721-b831-32aed30960a0"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">112</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="9acf71fc-514b-449b-a3e1-348588afc872"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="c" mc="Lifeline" uid="d4c563a2-4937-4515-a517-9a693e398e69"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="0254d402-5a23-43d4-96f7-ae8d33e46c7b"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">158</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="41ec5e33-8d1c-431c-a850-654f8655823c"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="f1b1337f-588b-4bdd-acb6-3c0de1f6b417"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="c" mc="Lifeline" uid="d4c563a2-4937-4515-a517-9a693e398e69"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="9acf71fc-514b-449b-a3e1-348588afc872"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">112</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="0254d402-5a23-43d4-96f7-ae8d33e46c7b"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="c" mc="Lifeline" uid="d4c563a2-4937-4515-a517-9a693e398e69"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f1b1337f-588b-4bdd-acb6-3c0de1f6b417"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">158</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="dc29ca05-b77e-4bbb-b930-d0f0ff9317b3"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">124</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="new" mc="Message" uid="9bec53ed-6a25-4bde-aa6f-629d1730976e"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[new]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="a79900a5-ed5e-41cb-be11-3b7fc23f4011"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="c" mc="Lifeline" uid="d4c563a2-4937-4515-a517-9a693e398e69"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ae72682e-11da-4cb1-953d-f43dfe8144f0"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">124</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="ea721b22-c0e1-4a50-84d1-9973728f46ea"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">144</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="aedef41f-d647-42a9-a43f-efb2fc935d67"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">144</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="c" mc="Lifeline" uid="d4c563a2-4937-4515-a517-9a693e398e69"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="a79900a5-ed5e-41cb-be11-3b7fc23f4011"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">124</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="44f265af-e393-4c76-81ac-85a31943f0bc"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">180</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="d6e492df-e6f8-4a45-9902-ca9f558c251b"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="aff510a0-d6f0-4b4d-b73b-e3938d5b33b7"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="executeQuery" mc="Operation" uid="318097dd-581a-4fdf-9556-2327e0e19ff2"/>
+                      <PID name="Statement" mc="Interface" uid="2fc956fe-1bb4-44ec-886f-d8e9f4df07ee"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="aff510a0-d6f0-4b4d-b73b-e3938d5b33b7"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">180</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="3dda2dc6-6b29-46df-ba44-81bf7f5b96f4"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="020b164e-4ad2-45cc-b901-3d08db8831f6"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="" mc="Message" uid="ee3ffabe-3188-4d64-a731-0a12011885ec"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">ReturnMessage</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="84c42bef-3b5a-4e01-8147-01081b38d0a4"/>
+                      <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="3dda2dc6-6b29-46df-ba44-81bf7f5b96f4"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">180</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="020b164e-4ad2-45cc-b901-3d08db8831f6"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="84c42bef-3b5a-4e01-8147-01081b38d0a4"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">200</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="db" mc="Lifeline" uid="798d8823-d6d8-467f-b701-02d9a2a4e0a1"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[db]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="db" mc="BindableInstance" uid="8a82615c-26ed-4918-8535-01453c2be2c3"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="c" mc="Lifeline" uid="d4c563a2-4937-4515-a517-9a693e398e69"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[c]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="c" mc="BindableInstance" uid="5419c15b-c7e8-4cc6-846d-1ae21eeb2125"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="r" mc="Lifeline" uid="5870423b-74ff-42d2-8e0b-ec74c658f61a"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[r]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="st" mc="BindableInstance" uid="0467a0c0-b8e9-4950-8124-c34feb4fca4e"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="c4ecd456-72e5-411e-8b5c-17bf04cb8a93"/>
+          <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="db" mc="BindableInstance" uid="8a82615c-26ed-4918-8535-01453c2be2c3"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[db]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="DBClass" mc="TemplateParameter" uid="899cdf2d-3a1f-4d0f-8af1-36e685a85b23"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="c" mc="BindableInstance" uid="5419c15b-c7e8-4cc6-846d-1ae21eeb2125"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[c]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Delete" mc="SequenceDiagram" uid="21d88661-7b65-468f-af17-d40e0ea46856"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

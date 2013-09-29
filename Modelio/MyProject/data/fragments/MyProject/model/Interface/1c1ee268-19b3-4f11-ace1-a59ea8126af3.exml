@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="PersistentClassList" version="3">
+  <DEPS>
+    <ID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+    <EXTID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+    <EXTID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+    <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[PersistentClassList]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="add" mc="Operation" uid="1e3543f0-e39b-41d0-928e-b3feda81f313"/>
+          <PID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[add]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="IO">
+              <OBJECT>
+                <ID name="e" mc="Parameter" uid="d870da21-0682-4cba-aa44-6db17141c754"/>
+                <PID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[e]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="TemplateInstanciation">
+        <OBJECT>
+          <ID name="-&gt;List" mc="TemplateBinding" uid="8ddf76c0-f63a-4c64-bc2f-125d28665a50"/>
+          <PID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[->List]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="ParameterSubstitution">
+              <OBJECT>
+                <ID name="E" mc="TemplateParameterSubstitution" uid="28534fde-a5e8-4b08-a632-ce5270764a5e"/>
+                <PID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[E]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Actual">
+                    <ID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
+                  </LINK>
+                  <LINK relation="FormalParameter">
+                    <REFOBJ>
+                      <ID name="E" mc="TemplateParameter" uid="5f46fbb3-3488-4cd1-a75c-6b6f38df6863"/>
+                      <PID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="InstanciatedTemplate">
+              <ID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Dependency" uid="36d38b84-5e12-448a-b8b2-672d209e8129"/>
+          <PID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+          <ATTRIBUTES>
+            <ATT name="DependsOnId"></ATT>
+            <ATT name="DependsOnName"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

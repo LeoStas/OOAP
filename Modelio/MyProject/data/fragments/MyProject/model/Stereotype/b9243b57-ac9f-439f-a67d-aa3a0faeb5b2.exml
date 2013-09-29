@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="trigger" version="3">
+  <DEPS>
+    <ID name="trigger" mc="Stereotype" uid="b9243b57-ac9f-439f-a67d-aa3a0faeb5b2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="trigger" mc="Stereotype" uid="b9243b57-ac9f-439f-a67d-aa3a0faeb5b2"/>
+    <PID name="LocalProfile" mc="Profile" uid="7ed495fc-01f2-4325-bd14-9b884444b5e3"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[trigger]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Operation]]></ATT>
+      <ATT name="Name"><![CDATA[trigger]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

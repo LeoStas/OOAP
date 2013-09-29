@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="stored proc" version="3">
+  <DEPS>
+    <ID name="stored proc" mc="Stereotype" uid="10b4f8d0-3d79-4681-b1d3-d318a0841f1e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="stored proc" mc="Stereotype" uid="10b4f8d0-3d79-4681-b1d3-d318a0841f1e"/>
+    <PID name="LocalProfile" mc="Profile" uid="7ed495fc-01f2-4325-bd14-9b884444b5e3"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[stored proc]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Operation]]></ATT>
+      <ATT name="Name"><![CDATA[stored proc]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

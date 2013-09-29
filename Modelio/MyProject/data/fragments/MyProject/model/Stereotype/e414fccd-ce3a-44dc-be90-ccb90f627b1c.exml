@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="unique" version="3">
+  <DEPS>
+    <ID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
+    <PID name="LocalProfile" mc="Profile" uid="7ed495fc-01f2-4325-bd14-9b884444b5e3"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[unique]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Operation]]></ATT>
+      <ATT name="Name"><![CDATA[unique]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

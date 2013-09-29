@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Бронирование и доставка билетов" version="3">
+  <DEPS>
+    <ID name="Бронирование и доставка билетов" mc="Class" uid="15c5d71d-4d06-4f8c-9b45-c003c014cede"/>
+    <COMPID name="CRD заявки" mc="UseCase" uid="b313f6e9-6f4e-464f-afe8-d4186d35ecbb"/>
+    <COMPID name="CRUD данные о маршрутах" mc="UseCase" uid="02921ba2-2f16-4717-b4b0-f9da8ad4373e"/>
+    <COMPID name="Аннулирование заявки" mc="UseCase" uid="0ff5b824-f5db-4a80-81e8-e56d21e40d4f"/>
+    <COMPID name="Войти в систему" mc="UseCase" uid="dfb3087f-02fd-446c-aab4-d0262957a077"/>
+    <COMPID name="Зарегистрироваться в системе" mc="UseCase" uid="3c730d0b-87db-4ca8-8e78-fe8aaf11329f"/>
+    <COMPID name="Обновить базы" mc="UseCase" uid="94d1eb0b-8b98-4dda-8e66-57ade040b13e"/>
+    <COMPID name="Отправить заявку на выполнение" mc="UseCase" uid="f62386c1-c838-426f-aed4-aa8e6c105ddb"/>
+    <COMPID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+    <EXTID name="subject" mc="Stereotype" uid="9de695f3-2792-4a40-8bd5-4beea8f2177d"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Бронирование и доставка билетов" mc="Class" uid="15c5d71d-4d06-4f8c-9b45-c003c014cede"/>
+    <PID name="Use Case Model" mc="Package" uid="945d76f4-e635-449a-b041-9a8068c815e4"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Бронирование и доставка билетов]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Зарегистрироваться в системе" mc="UseCase" uid="3c730d0b-87db-4ca8-8e78-fe8aaf11329f"/>
+        <COMPID name="Войти в систему" mc="UseCase" uid="dfb3087f-02fd-446c-aab4-d0262957a077"/>
+        <COMPID name="CRUD данные о маршрутах" mc="UseCase" uid="02921ba2-2f16-4717-b4b0-f9da8ad4373e"/>
+        <COMPID name="Отправить заявку на выполнение" mc="UseCase" uid="f62386c1-c838-426f-aed4-aa8e6c105ddb"/>
+        <COMPID name="Обновить базы" mc="UseCase" uid="94d1eb0b-8b98-4dda-8e66-57ade040b13e"/>
+        <COMPID name="Проверить статус билета" mc="UseCase" uid="eef55696-9484-4983-9f18-60070afce6ae"/>
+        <COMPID name="CRD заявки" mc="UseCase" uid="b313f6e9-6f4e-464f-afe8-d4186d35ecbb"/>
+        <COMPID name="Аннулирование заявки" mc="UseCase" uid="0ff5b824-f5db-4a80-81e8-e56d21e40d4f"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="subject" mc="Stereotype" uid="9de695f3-2792-4a40-8bd5-4beea8f2177d"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

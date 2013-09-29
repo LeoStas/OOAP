@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Middleware" version="3">
+  <DEPS>
+    <ID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
+    <COMPID name="Main" mc="ClassDiagram" uid="dc74d4a4-a5a0-4cf6-8af1-dfa9838df7f2"/>
+    <COMPID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+    <COMPID name="java.sql" mc="Package" uid="d96729e2-6772-462c-9a6b-438426ee24e0"/>
+    <COMPID name="java.util" mc="Package" uid="daf72b00-8617-40bc-ada3-89b56935c901"/>
+    <EXTID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
+    <PID name="Design Model" mc="Package" uid="26347e9f-d8e4-40e5-871c-1bf107bcd743"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Middleware]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+        <COMPID name="java.util" mc="Package" uid="daf72b00-8617-40bc-ada3-89b56935c901"/>
+        <COMPID name="java.sql" mc="Package" uid="d96729e2-6772-462c-9a6b-438426ee24e0"/>
+      </COMP>
+      <LINK relation="Extension">
+        <ID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Main" mc="ClassDiagram" uid="dc74d4a4-a5a0-4cf6-8af1-dfa9838df7f2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

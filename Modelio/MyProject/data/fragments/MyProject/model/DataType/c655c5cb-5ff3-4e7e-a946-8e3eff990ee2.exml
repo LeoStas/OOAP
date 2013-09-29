@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="char" version="3">
+  <DEPS>
+    <ID name="char" mc="DataType" uid="c655c5cb-5ff3-4e7e-a946-8e3eff990ee2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="char" mc="DataType" uid="c655c5cb-5ff3-4e7e-a946-8e3eff990ee2"/>
+    <PID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[char]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

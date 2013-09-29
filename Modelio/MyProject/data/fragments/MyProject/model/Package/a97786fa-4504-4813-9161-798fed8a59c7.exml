@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="java.lang" version="3">
+  <DEPS>
+    <ID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+    <COMPID name="Boolean" mc="Class" uid="6a00abf4-529c-4619-8add-017441309766"/>
+    <COMPID name="Byte" mc="Class" uid="34b74029-9bdc-4b2c-ae17-324a1c018aae"/>
+    <COMPID name="Double" mc="Class" uid="7193e765-7c5d-44c2-8b91-2feb5bc9cbd2"/>
+    <COMPID name="Float" mc="Class" uid="d7f300d2-8dcc-433c-8231-96575395930b"/>
+    <COMPID name="Long" mc="Class" uid="63d393a0-f4e0-4089-bfd4-3a2e27774cd6"/>
+    <COMPID name="Object" mc="Class" uid="ccb1b23b-15da-4907-a356-f8ebbe4e26e8"/>
+    <COMPID name="String" mc="Class" uid="a5e0a0bc-2318-49c8-8d3b-2b005dd638e3"/>
+    <COMPID name="Void" mc="Class" uid="eead51cf-0407-4e70-9597-5cc795ddc898"/>
+    <COMPID name="boolean" mc="DataType" uid="7b296c6a-4e09-485b-b2ee-a220f91d8821"/>
+    <COMPID name="byte" mc="DataType" uid="88309b62-2332-4abf-a337-f55f17b0a22d"/>
+    <COMPID name="char" mc="DataType" uid="c655c5cb-5ff3-4e7e-a946-8e3eff990ee2"/>
+    <COMPID name="double" mc="DataType" uid="aa73b81c-3dd9-493b-b7ff-8487ea405942"/>
+    <COMPID name="float" mc="DataType" uid="07ca185b-0ac8-4a4f-bd17-519b6fd65688"/>
+    <COMPID name="int" mc="DataType" uid="4896428e-280b-409b-9855-6da96049be4a"/>
+    <COMPID name="java.lang Class diagram" mc="ClassDiagram" uid="da121caf-80e5-4cfe-a341-6e492c0685c9"/>
+    <COMPID name="long" mc="DataType" uid="26abfd96-4e80-47bf-887e-9992249d0908"/>
+    <COMPID name="short" mc="DataType" uid="927e6274-d407-44db-94ad-1aa7fe75770f"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+    <PID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[java.lang]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Object" mc="Class" uid="ccb1b23b-15da-4907-a356-f8ebbe4e26e8"/>
+        <COMPID name="Boolean" mc="Class" uid="6a00abf4-529c-4619-8add-017441309766"/>
+        <COMPID name="Byte" mc="Class" uid="34b74029-9bdc-4b2c-ae17-324a1c018aae"/>
+        <COMPID name="Float" mc="Class" uid="d7f300d2-8dcc-433c-8231-96575395930b"/>
+        <COMPID name="Double" mc="Class" uid="7193e765-7c5d-44c2-8b91-2feb5bc9cbd2"/>
+        <COMPID name="Void" mc="Class" uid="eead51cf-0407-4e70-9597-5cc795ddc898"/>
+        <COMPID name="String" mc="Class" uid="a5e0a0bc-2318-49c8-8d3b-2b005dd638e3"/>
+        <COMPID name="Long" mc="Class" uid="63d393a0-f4e0-4089-bfd4-3a2e27774cd6"/>
+        <COMPID name="int" mc="DataType" uid="4896428e-280b-409b-9855-6da96049be4a"/>
+        <COMPID name="boolean" mc="DataType" uid="7b296c6a-4e09-485b-b2ee-a220f91d8821"/>
+        <COMPID name="char" mc="DataType" uid="c655c5cb-5ff3-4e7e-a946-8e3eff990ee2"/>
+        <COMPID name="byte" mc="DataType" uid="88309b62-2332-4abf-a337-f55f17b0a22d"/>
+        <COMPID name="float" mc="DataType" uid="07ca185b-0ac8-4a4f-bd17-519b6fd65688"/>
+        <COMPID name="short" mc="DataType" uid="927e6274-d407-44db-94ad-1aa7fe75770f"/>
+        <COMPID name="long" mc="DataType" uid="26abfd96-4e80-47bf-887e-9992249d0908"/>
+        <COMPID name="double" mc="DataType" uid="aa73b81c-3dd9-493b-b7ff-8487ea405942"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="java.lang Class diagram" mc="ClassDiagram" uid="da121caf-80e5-4cfe-a341-6e492c0685c9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

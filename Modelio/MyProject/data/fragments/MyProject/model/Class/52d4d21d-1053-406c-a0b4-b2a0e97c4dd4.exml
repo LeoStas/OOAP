@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UUID" version="3">
+  <DEPS>
+    <ID name="UUID" mc="Class" uid="52d4d21d-1053-406c-a0b4-b2a0e97c4dd4"/>
+    <EXTID name="Object" mc="Class" uid="ccb1b23b-15da-4907-a356-f8ebbe4e26e8"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="UUID" mc="Class" uid="52d4d21d-1053-406c-a0b4-b2a0e97c4dd4"/>
+    <PID name="java.util" mc="Package" uid="daf72b00-8617-40bc-ada3-89b56935c901"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[UUID]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Generalization" uid="92da5721-43ab-4b72-905a-8f84c3e9c926"/>
+          <PID name="UUID" mc="Class" uid="52d4d21d-1053-406c-a0b4-b2a0e97c4dd4"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Object" mc="Class" uid="ccb1b23b-15da-4907-a356-f8ebbe4e26e8"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LocalProfile" version="3">
+  <DEPS>
+    <ID name="LocalProfile" mc="Profile" uid="7ed495fc-01f2-4325-bd14-9b884444b5e3"/>
+    <COMPID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
+    <COMPID name="boundary" mc="Stereotype" uid="808d0985-851b-4d82-858e-2471bdb9ce66"/>
+    <COMPID name="check" mc="Stereotype" uid="9bea1f91-1660-47d8-a2dd-120192f193d2"/>
+    <COMPID name="control" mc="Stereotype" uid="8c041908-c99d-4163-9d89-db5baf97d301"/>
+    <COMPID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>
+    <COMPID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+    <COMPID name="identifying" mc="Stereotype" uid="2853381d-81de-417d-aa4b-e2ae7ead5216"/>
+    <COMPID name="index" mc="Stereotype" uid="69c70fba-9dad-438b-8493-ff2e39b30937"/>
+    <COMPID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+    <COMPID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
+    <COMPID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
+    <COMPID name="non identifying" mc="Stereotype" uid="dd854355-1744-4fd1-ba7f-7fb3adeb00f6"/>
+    <COMPID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+    <COMPID name="schema" mc="Stereotype" uid="ce12c3a4-f5b9-42b2-8a57-65633ce21e32"/>
+    <COMPID name="stored proc" mc="Stereotype" uid="10b4f8d0-3d79-4681-b1d3-d318a0841f1e"/>
+    <COMPID name="subject" mc="Stereotype" uid="9de695f3-2792-4a40-8bd5-4beea8f2177d"/>
+    <COMPID name="subsystem proxy" mc="Stereotype" uid="6ba8d252-9508-4031-8980-f273049e5d24"/>
+    <COMPID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+    <COMPID name="trigger" mc="Stereotype" uid="b9243b57-ac9f-439f-a67d-aa3a0faeb5b2"/>
+    <COMPID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
+    <COMPID name="use case realization" mc="Stereotype" uid="1c6b3e51-bec2-40c4-90a7-e45170504f0f"/>
+    <COMPID name="view" mc="Stereotype" uid="2290364b-50b8-42eb-967c-0bd666f66a08"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="LocalProfile" mc="Profile" uid="7ed495fc-01f2-4325-bd14-9b884444b5e3"/>
+    <PID name="LocalModule" mc="ModuleComponent" uid="95367f2d-620a-45b2-967a-5573d7d4a718"/>
+    <ATTRIBUTES>
+      <ATT name="JCode"></ATT>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[LocalProfile]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DefinedStereotype">
+        <COMPID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
+        <COMPID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
+        <COMPID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
+        <COMPID name="subject" mc="Stereotype" uid="9de695f3-2792-4a40-8bd5-4beea8f2177d"/>
+        <COMPID name="use case realization" mc="Stereotype" uid="1c6b3e51-bec2-40c4-90a7-e45170504f0f"/>
+        <COMPID name="boundary" mc="Stereotype" uid="808d0985-851b-4d82-858e-2471bdb9ce66"/>
+        <COMPID name="control" mc="Stereotype" uid="8c041908-c99d-4163-9d89-db5baf97d301"/>
+        <COMPID name="entity" mc="Stereotype" uid="9020c6e6-d043-4f26-899a-037950006692"/>
+        <COMPID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
+        <COMPID name="subsystem proxy" mc="Stereotype" uid="6ba8d252-9508-4031-8980-f273049e5d24"/>
+        <COMPID name="pk" mc="Stereotype" uid="6742644a-d677-425d-94dc-c054f36f0ee9"/>
+        <COMPID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
+        <COMPID name="table" mc="Stereotype" uid="54d385e5-51fc-40bc-b7e6-f0cf1875d1ef"/>
+        <COMPID name="view" mc="Stereotype" uid="2290364b-50b8-42eb-967c-0bd666f66a08"/>
+        <COMPID name="schema" mc="Stereotype" uid="ce12c3a4-f5b9-42b2-8a57-65633ce21e32"/>
+        <COMPID name="identifying" mc="Stereotype" uid="2853381d-81de-417d-aa4b-e2ae7ead5216"/>
+        <COMPID name="non identifying" mc="Stereotype" uid="dd854355-1744-4fd1-ba7f-7fb3adeb00f6"/>
+        <COMPID name="index" mc="Stereotype" uid="69c70fba-9dad-438b-8493-ff2e39b30937"/>
+        <COMPID name="trigger" mc="Stereotype" uid="b9243b57-ac9f-439f-a67d-aa3a0faeb5b2"/>
+        <COMPID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
+        <COMPID name="stored proc" mc="Stereotype" uid="10b4f8d0-3d79-4681-b1d3-d318a0841f1e"/>
+        <COMPID name="check" mc="Stereotype" uid="9bea1f91-1660-47d8-a2dd-120192f193d2"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

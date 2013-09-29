@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="java.util" version="3">
+  <DEPS>
+    <ID name="java.util" mc="Package" uid="daf72b00-8617-40bc-ada3-89b56935c901"/>
+    <COMPID name="Date" mc="Class" uid="84ede37d-2555-4221-adb3-80e3754f78ec"/>
+    <COMPID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+    <COMPID name="Map" mc="Interface" uid="0168f29d-7651-492e-bd0f-a001a5098e14"/>
+    <COMPID name="Set" mc="Interface" uid="aff4deb1-aba2-42fc-bec0-573f7a55d424"/>
+    <COMPID name="UUID" mc="Class" uid="52d4d21d-1053-406c-a0b4-b2a0e97c4dd4"/>
+    <COMPID name="java.util Class diagram" mc="ClassDiagram" uid="6e229322-a2ca-4f9b-aacc-0859fdb55b91"/>
+    <EXTID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="java.util" mc="Package" uid="daf72b00-8617-40bc-ada3-89b56935c901"/>
+    <PID name="Middleware" mc="Package" uid="d5480057-6bbe-4238-9ef0-68b6937d17f6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[java.util]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="e9041cf2-3db7-4868-93de-3f578dea6b21"/>
+          <PID name="java.util" mc="Package" uid="daf72b00-8617-40bc-ada3-89b56935c901"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Date" mc="Class" uid="84ede37d-2555-4221-adb3-80e3754f78ec"/>
+        <COMPID name="UUID" mc="Class" uid="52d4d21d-1053-406c-a0b4-b2a0e97c4dd4"/>
+        <COMPID name="List" mc="Interface" uid="af189184-d986-4955-bfc7-5f8e88677597"/>
+        <COMPID name="Set" mc="Interface" uid="aff4deb1-aba2-42fc-bec0-573f7a55d424"/>
+        <COMPID name="Map" mc="Interface" uid="0168f29d-7651-492e-bd0f-a001a5098e14"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="java.util Class diagram" mc="ClassDiagram" uid="6e229322-a2ca-4f9b-aacc-0859fdb55b91"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

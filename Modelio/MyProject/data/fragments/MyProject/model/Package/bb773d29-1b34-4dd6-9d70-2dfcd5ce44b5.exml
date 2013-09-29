@@ -1,0 +1,623 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="RDBMS-JDBC" version="3">
+  <DEPS>
+    <ID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+    <COMPID name="Create" mc="Interaction" uid="af604d71-1f62-4cae-87d3-4196228b46fa"/>
+    <COMPID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
+    <COMPID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+    <COMPID name="Disconnect" mc="Interaction" uid="e4b7f7f0-6511-4914-8093-d930879dc418"/>
+    <COMPID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
+    <COMPID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
+    <COMPID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+    <COMPID name="RDBMS-JDBC" mc="ClassDiagram" uid="322f1285-cc8a-430e-833d-d3c1347aff95"/>
+    <COMPID name="RDBMS-JDBC Composite Structure diagram" mc="CompositeStructureDiagram" uid="ea2b2306-9069-4234-a075-ae8967b4bc6d"/>
+    <COMPID name="Read" mc="Interaction" uid="ab605b57-d7e6-4373-82bd-0b629eb2a55b"/>
+    <COMPID name="Update" mc="Interaction" uid="6e419dab-2039-45ba-a5df-cfd38be1dc5e"/>
+    <EXTID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+    <EXTID name="DriverManager" mc="Class" uid="2e6bcb70-8094-4ee8-a73d-e60455a13462"/>
+    <EXTID name="Statement" mc="Interface" uid="2fc956fe-1bb4-44ec-886f-d8e9f4df07ee"/>
+    <EXTID name="java.sql" mc="Package" uid="d96729e2-6772-462c-9a6b-438426ee24e0"/>
+    <EXTID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+    <PID name="Persistency" mc="Package" uid="29765c82-f930-4e69-9ceb-00ab953f28d0"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[RDBMS-JDBC]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedPackageImport">
+        <OBJECT>
+          <ID name="PackageImport" mc="PackageImport" uid="db735da5-08ec-4c6d-950f-0fd517eca18a"/>
+          <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"><![CDATA[PackageImport]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedPackage">
+              <ID name="java.sql" mc="Package" uid="d96729e2-6772-462c-9a6b-438426ee24e0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <OBJECT>
+          <ID name="RDBMS-JDBC" mc="Collaboration" uid="3120e8c6-7394-438d-bae1-5ac884964bd5"/>
+          <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[RDBMS-JDBC]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="OwnedBehavior">
+              <COMPID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
+              <COMPID name="Disconnect" mc="Interaction" uid="e4b7f7f0-6511-4914-8093-d930879dc418"/>
+              <COMPID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+              <COMPID name="Create" mc="Interaction" uid="af604d71-1f62-4cae-87d3-4196228b46fa"/>
+              <COMPID name="Update" mc="Interaction" uid="6e419dab-2039-45ba-a5df-cfd38be1dc5e"/>
+              <COMPID name="Read" mc="Interaction" uid="ab605b57-d7e6-4373-82bd-0b629eb2a55b"/>
+            </COMP>
+            <COMP relation="Template">
+              <OBJECT>
+                <ID name="DBClass" mc="TemplateParameter" uid="899cdf2d-3a1f-4d0f-8af1-36e685a85b23"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"><![CDATA[DBClass]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PersistentClass" mc="TemplateParameter" uid="3804e109-0c02-48ce-98f1-e4f7ed0a2094"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"><![CDATA[PersistentClass]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="PesistentClassList" mc="TemplateParameter" uid="f29bcc9d-1fbf-403c-b752-aacaacd24046"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsValueParameter">false</ATT>
+                  <ATT name="IsElementary">false</ATT>
+                  <ATT name="IsAbstract">false</ATT>
+                  <ATT name="IsLeaf">false</ATT>
+                  <ATT name="IsRoot">false</ATT>
+                  <ATT name="Visibility">Public</ATT>
+                  <ATT name="Name"><![CDATA[PesistentClassList]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="drMan" mc="BindableInstance" uid="b7001e85-6b59-44d7-a1ef-507d087f4b16"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[drMan]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="DriverManager" mc="Class" uid="2e6bcb70-8094-4ee8-a73d-e60455a13462"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="db" mc="BindableInstance" uid="91eab8ec-6601-42fd-92f2-7cf024f25c60"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[db]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedEnd">
+                    <OBJECT>
+                      <ID name="drMan" mc="LinkEnd" uid="e35b269b-4ffa-4031-98a7-e9a64ced89f6"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[drMan]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Link" uid="c4e7a5ab-7cf8-4185-8139-0ace887b90b5"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="drMan" mc="BindableInstance" uid="b7001e85-6b59-44d7-a1ef-507d087f4b16"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="LinkEnd" uid="58b7db8b-c6e0-44ed-9083-3602d846a8ca"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Link" uid="c4e7a5ab-7cf8-4185-8139-0ace887b90b5"/>
+                                  <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="drMan" mc="LinkEnd" uid="e35b269b-4ffa-4031-98a7-e9a64ced89f6"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="c" mc="LinkEnd" uid="edeb6bf4-247b-4af8-89bb-c21239b33443"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[c]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Link" uid="85189047-8b10-411c-9ca6-1a90cbf8ec4b"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="c" mc="BindableInstance" uid="2f7600cf-e0c5-4c98-ac2f-d5560871c62a"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="LinkEnd" uid="32cd12ca-ebd8-47fc-b474-329f83be6721"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Link" uid="85189047-8b10-411c-9ca6-1a90cbf8ec4b"/>
+                                  <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="c" mc="LinkEnd" uid="edeb6bf4-247b-4af8-89bb-c21239b33443"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="st" mc="LinkEnd" uid="3ad850a8-602c-4960-a97b-05acd1309aaa"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[st]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Link" uid="38f9d21d-2b29-424d-9d4c-033fe3db3f98"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="st" mc="BindableInstance" uid="0467a0c0-b8e9-4950-8124-c34feb4fca4e"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="LinkEnd" uid="229b09a4-beab-498f-8db1-16d8903f0f99"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Link" uid="38f9d21d-2b29-424d-9d4c-033fe3db3f98"/>
+                                  <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="st" mc="LinkEnd" uid="3ad850a8-602c-4960-a97b-05acd1309aaa"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="l" mc="LinkEnd" uid="8e2362d1-78de-4088-beb0-ae768645e923"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[l]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Link" uid="816d619e-a5a6-4859-8e7b-4307de030444"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="l" mc="BindableInstance" uid="92ef3930-9a07-4f9e-a20b-d99588a1979d"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="LinkEnd" uid="dbcf5efd-6f8d-43f9-afe2-2c896e82b2d9"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Link" uid="816d619e-a5a6-4859-8e7b-4307de030444"/>
+                                  <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="l" mc="LinkEnd" uid="8e2362d1-78de-4088-beb0-ae768645e923"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="o" mc="LinkEnd" uid="4274c557-52c2-4792-b1d6-a6b9e1b32e15"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[o]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Link" uid="19206355-0435-4461-ba3c-abbc293d4562"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="o" mc="BindableInstance" uid="87a3715c-9cf7-41d6-ae04-f02697bbd6cc"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="LinkEnd" uid="7b529e4c-20a9-47e8-b1a7-795d81e74f97"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Link" uid="19206355-0435-4461-ba3c-abbc293d4562"/>
+                                  <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="o" mc="LinkEnd" uid="4274c557-52c2-4792-b1d6-a6b9e1b32e15"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="DBClass" mc="TemplateParameter" uid="899cdf2d-3a1f-4d0f-8af1-36e685a85b23"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="c" mc="BindableInstance" uid="2f7600cf-e0c5-4c98-ac2f-d5560871c62a"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[c]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="st" mc="BindableInstance" uid="0467a0c0-b8e9-4950-8124-c34feb4fca4e"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[st]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Statement" mc="Interface" uid="2fc956fe-1bb4-44ec-886f-d8e9f4df07ee"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="o" mc="BindableInstance" uid="87a3715c-9cf7-41d6-ae04-f02697bbd6cc"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[o]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="PersistentClass" mc="TemplateParameter" uid="3804e109-0c02-48ce-98f1-e4f7ed0a2094"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="l" mc="BindableInstance" uid="92ef3930-9a07-4f9e-a20b-d99588a1979d"/>
+                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[l]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OwnedEnd">
+                    <OBJECT>
+                      <ID name="o" mc="LinkEnd" uid="6bfadad3-4258-483f-b5bb-fbe6b4329646"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                      <ATTRIBUTES>
+                        <ATT name="IsOrdered">false</ATT>
+                        <ATT name="IsUnique">false</ATT>
+                        <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                        <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                        <ATT name="Name"><![CDATA[o]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <COMP relation="Link">
+                          <OBJECT>
+                            <ID name="" mc="Link" uid="12d65fa3-50e5-450c-bfcd-bdef552c06d4"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES></DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="o" mc="BindableInstance" uid="87a3715c-9cf7-41d6-ae04-f02697bbd6cc"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Opposite">
+                          <OBJECT>
+                            <ID name="" mc="LinkEnd" uid="b73cc537-d9ac-4374-9576-c795305e9c29"/>
+                            <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                            <ATTRIBUTES>
+                              <ATT name="IsOrdered">false</ATT>
+                              <ATT name="IsUnique">false</ATT>
+                              <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
+                              <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <COMP relation="Link">
+                                <OBJECT>
+                                  <ID name="" mc="Link" uid="12d65fa3-50e5-450c-bfcd-bdef552c06d4"/>
+                                  <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                                  <ATTRIBUTES>
+                                    <ATT name="Name"></ATT>
+                                    <ATT name="status">1970354901745664</ATT>
+                                  </ATTRIBUTES>
+                                  <DEPENDENCIES></DEPENDENCIES>
+                                </OBJECT>
+                              </COMP>
+                              <COMP relation="Opposite">
+                                <COMPID name="o" mc="LinkEnd" uid="6bfadad3-4258-483f-b5bb-fbe6b4329646"/>
+                              </COMP>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Base">
+                    <REFOBJ>
+                      <ID name="PesistentClassList" mc="TemplateParameter" uid="f29bcc9d-1fbf-403c-b752-aacaacd24046"/>
+                      <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <ID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
+            </LINK>
+            <COMP relation="Product">
+              <COMPID name="RDBMS-JDBC Composite Structure diagram" mc="CompositeStructureDiagram" uid="ea2b2306-9069-4234-a075-ae8967b4bc6d"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
+        <COMPID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
+        <COMPID name="PersistentClassList" mc="Interface" uid="1c1ee268-19b3-4f11-ace1-a59ea8126af3"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="RDBMS-JDBC" mc="ClassDiagram" uid="322f1285-cc8a-430e-833d-d3c1347aff95"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

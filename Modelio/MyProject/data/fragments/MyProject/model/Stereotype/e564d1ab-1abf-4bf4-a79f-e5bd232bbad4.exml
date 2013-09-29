@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="mechanism" version="3">
+  <DEPS>
+    <ID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
+    <PID name="LocalProfile" mc="Profile" uid="7ed495fc-01f2-4325-bd14-9b884444b5e3"/>
+    <ATTRIBUTES>
+      <ATT name="Image"></ATT>
+      <ATT name="Icon"><![CDATA[cogwheel.bmp]]></ATT>
+      <ATT name="IsHidden">false</ATT>
+      <ATT name="LabelKey"><![CDATA[mechanism]]></ATT>
+      <ATT name="BaseClassName"><![CDATA[Collaboration]]></ATT>
+      <ATT name="Name"><![CDATA[mechanism]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

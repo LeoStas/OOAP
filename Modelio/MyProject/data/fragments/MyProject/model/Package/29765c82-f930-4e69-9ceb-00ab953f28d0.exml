@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Persistency" version="3">
+  <DEPS>
+    <ID name="Persistency" mc="Package" uid="29765c82-f930-4e69-9ceb-00ab953f28d0"/>
+    <COMPID name="Main" mc="ClassDiagram" uid="15a1c68c-64ab-473f-af66-05bca1ba11e8"/>
+    <COMPID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Persistency" mc="Package" uid="29765c82-f930-4e69-9ceb-00ab953f28d0"/>
+    <PID name="Architectural Mechanisms" mc="Package" uid="3c3ddbe5-b5ee-4dc2-b22a-88b369ce5a03"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Persistency]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Main" mc="ClassDiagram" uid="15a1c68c-64ab-473f-af66-05bca1ba11e8"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

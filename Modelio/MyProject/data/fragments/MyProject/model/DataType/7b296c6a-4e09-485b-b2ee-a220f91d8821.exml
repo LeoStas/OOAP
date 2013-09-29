@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="boolean" version="3">
+  <DEPS>
+    <ID name="boolean" mc="DataType" uid="7b296c6a-4e09-485b-b2ee-a220f91d8821"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="boolean" mc="DataType" uid="7b296c6a-4e09-485b-b2ee-a220f91d8821"/>
+    <PID name="java.lang" mc="Package" uid="a97786fa-4504-4813-9161-798fed8a59c7"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[boolean]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

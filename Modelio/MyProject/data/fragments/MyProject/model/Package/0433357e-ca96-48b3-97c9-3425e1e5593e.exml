@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Deployment View" version="3">
+  <DEPS>
+    <ID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <EXTID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <PID name="myproject" mc="Package" uid="ee57b1c8-0e20-4735-81ce-0c4d93566e00"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Deployment View]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <ID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
