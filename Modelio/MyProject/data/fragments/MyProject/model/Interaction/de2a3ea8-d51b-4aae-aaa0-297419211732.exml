@@ -602,8 +602,8 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="st" mc="BindableInstance" uid="0467a0c0-b8e9-4950-8124-c34feb4fca4e"/>
-                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ID name="st" mc="BindableInstance" uid="6f159113-66c4-4708-a71c-eb0614e0c4ce"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -658,6 +658,23 @@
                 <DEPENDENCIES>
                   <LINK relation="Base">
                     <ID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="st" mc="BindableInstance" uid="6f159113-66c4-4708-a71c-eb0614e0c4ce"/>
+                <PID name="Delete" mc="Interaction" uid="de2a3ea8-d51b-4aae-aaa0-297419211732"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[st]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Statement" mc="Interface" uid="2fc956fe-1bb4-44ec-886f-d8e9f4df07ee"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

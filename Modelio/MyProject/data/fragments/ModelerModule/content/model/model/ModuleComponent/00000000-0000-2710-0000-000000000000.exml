@@ -13,7 +13,7 @@
       <ATT name="LicenseKey">0</ATT>
       <ATT name="MajVersion">8</ATT>
       <ATT name="MinVersion">1</ATT>
-      <ATT name="MinMinVersion"><![CDATA[13.9015]]></ATT>
+      <ATT name="MinMinVersion"><![CDATA[17.9017]]></ATT>
       <ATT name="MinBinVersionCompatibility"></ATT>
       <ATT name="JavaClassName"><![CDATA[org.modelio.module.modelermodule.impl.ModelerModuleModule]]></ATT>
       <ATT name="State">SoModuleStateActivated</ATT>

@@ -15,6 +15,7 @@ all: view
 report.pdf: report.tex
 	mkdir -p $(BUILD_DIR)
 	$(PDFBUILDER) $(PDFBUILDER_OPTIONS) $^
+	$(PDFBUILDER) $(PDFBUILDER_OPTIONS) $^
 	mv -v $(BUILD_DIR)/$@ .
 
 # fictive (not file-related target).

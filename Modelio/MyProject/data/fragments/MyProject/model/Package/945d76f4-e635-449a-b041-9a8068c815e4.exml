@@ -2,15 +2,15 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Use Case Model" version="3">
   <DEPS>
     <ID name="Use Case Model" mc="Package" uid="945d76f4-e635-449a-b041-9a8068c815e4"/>
-    <COMPID name="Main" mc="UseCaseDiagram" uid="e8c917ad-f14c-4b10-8316-3a2d21ebaafa"/>
-    <COMPID name="База билетов" mc="Actor" uid="4d7f2c0d-7764-4267-ba82-8e09cff30b07"/>
-    <COMPID name="База заявок" mc="Actor" uid="9299326a-e568-4dc2-b0ca-2007d88313e1"/>
-    <COMPID name="Бронирование и доставка билетов" mc="Class" uid="15c5d71d-4d06-4f8c-9b45-c003c014cede"/>
-    <COMPID name="Кассир" mc="Actor" uid="6be20928-1000-4c91-bc06-dd4c98f0ee58"/>
-    <COMPID name="Клиент" mc="Actor" uid="b1b554e6-a8c6-4702-877f-87872530556f"/>
-    <COMPID name="Пользователь" mc="Actor" uid="46198a1a-9a95-4f9e-8aab-3154b6556e70"/>
-    <COMPID name="Служба доставки" mc="Actor" uid="2c2064fb-9a24-4927-a77c-e67d7fa2966b"/>
-    <COMPID name="Таймер" mc="Actor" uid="62e14ca6-7be4-4db4-8689-1e1707b1363c"/>
+    <COMPID name="Main" mc="UseCaseDiagram" uid="9c5d8eff-233d-4e38-b728-0690da165f00"/>
+    <COMPID name="База билетов" mc="Actor" uid="be5a9d65-7147-4c40-92e5-aa01658b25c9"/>
+    <COMPID name="База заявок" mc="Actor" uid="4d1eeb9b-f44d-4feb-ab20-e045debdaa3d"/>
+    <COMPID name="Кассир" mc="Actor" uid="5d4c4a40-7421-4ad0-be90-faa28b4b3241"/>
+    <COMPID name="Клиент" mc="Actor" uid="9701e03e-83ee-48ed-825b-34098e8322cb"/>
+    <COMPID name="Пользователь" mc="Actor" uid="f76fec3d-d14f-4a57-95ed-125f38ce8305"/>
+    <COMPID name="Система бронирования и покупки билетов" mc="Class" uid="1a390b20-3a9e-43a1-90c1-546f7c23016e"/>
+    <COMPID name="Служба доставки" mc="Actor" uid="9b6b58f5-f249-4696-80a1-0b70e8a0dbfb"/>
+    <COMPID name="Таймер" mc="Actor" uid="f1aa732f-125c-4315-ae33-93d74689ecb7"/>
     <EXTID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
   </DEPS>
   <OBJECT>
@@ -27,20 +27,20 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Бронирование и доставка билетов" mc="Class" uid="15c5d71d-4d06-4f8c-9b45-c003c014cede"/>
-        <COMPID name="Клиент" mc="Actor" uid="b1b554e6-a8c6-4702-877f-87872530556f"/>
-        <COMPID name="Кассир" mc="Actor" uid="6be20928-1000-4c91-bc06-dd4c98f0ee58"/>
-        <COMPID name="Таймер" mc="Actor" uid="62e14ca6-7be4-4db4-8689-1e1707b1363c"/>
-        <COMPID name="Пользователь" mc="Actor" uid="46198a1a-9a95-4f9e-8aab-3154b6556e70"/>
-        <COMPID name="База билетов" mc="Actor" uid="4d7f2c0d-7764-4267-ba82-8e09cff30b07"/>
-        <COMPID name="База заявок" mc="Actor" uid="9299326a-e568-4dc2-b0ca-2007d88313e1"/>
-        <COMPID name="Служба доставки" mc="Actor" uid="2c2064fb-9a24-4927-a77c-e67d7fa2966b"/>
+        <COMPID name="Система бронирования и покупки билетов" mc="Class" uid="1a390b20-3a9e-43a1-90c1-546f7c23016e"/>
+        <COMPID name="Клиент" mc="Actor" uid="9701e03e-83ee-48ed-825b-34098e8322cb"/>
+        <COMPID name="Кассир" mc="Actor" uid="5d4c4a40-7421-4ad0-be90-faa28b4b3241"/>
+        <COMPID name="Таймер" mc="Actor" uid="f1aa732f-125c-4315-ae33-93d74689ecb7"/>
+        <COMPID name="Пользователь" mc="Actor" uid="f76fec3d-d14f-4a57-95ed-125f38ce8305"/>
+        <COMPID name="База билетов" mc="Actor" uid="be5a9d65-7147-4c40-92e5-aa01658b25c9"/>
+        <COMPID name="База заявок" mc="Actor" uid="4d1eeb9b-f44d-4feb-ab20-e045debdaa3d"/>
+        <COMPID name="Служба доставки" mc="Actor" uid="9b6b58f5-f249-4696-80a1-0b70e8a0dbfb"/>
       </COMP>
       <LINK relation="Extension">
         <ID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Main" mc="UseCaseDiagram" uid="e8c917ad-f14c-4b10-8316-3a2d21ebaafa"/>
+        <COMPID name="Main" mc="UseCaseDiagram" uid="9c5d8eff-233d-4e38-b728-0690da165f00"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

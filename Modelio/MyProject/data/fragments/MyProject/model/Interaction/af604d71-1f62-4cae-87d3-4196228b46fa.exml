@@ -735,8 +735,8 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="o" mc="BindableInstance" uid="87a3715c-9cf7-41d6-ae04-f02697bbd6cc"/>
-                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ID name="obj" mc="BindableInstance" uid="7f26bddf-c4ce-49a7-bc45-35507d6a45a6"/>
+                <PID name="Create" mc="Interaction" uid="af604d71-1f62-4cae-87d3-4196228b46fa"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -842,6 +842,23 @@
                       <ID name="DBClass" mc="TemplateParameter" uid="899cdf2d-3a1f-4d0f-8af1-36e685a85b23"/>
                       <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
                     </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="obj" mc="BindableInstance" uid="7f26bddf-c4ce-49a7-bc45-35507d6a45a6"/>
+                <PID name="Create" mc="Interaction" uid="af604d71-1f62-4cae-87d3-4196228b46fa"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[obj]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="PersistentClass" mc="Class" uid="8e758f16-661c-42eb-8a86-fcbae30a43e0"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

@@ -9,7 +9,7 @@
       <ATT name="LicenseKey">0</ATT>
       <ATT name="MajVersion">4</ATT>
       <ATT name="MinVersion">0</ATT>
-      <ATT name="MinMinVersion"><![CDATA[1.9015]]></ATT>
+      <ATT name="MinMinVersion"><![CDATA[3.9017]]></ATT>
       <ATT name="MinBinVersionCompatibility"></ATT>
       <ATT name="JavaClassName"><![CDATA[com.modelio.module.webmodelpublisher.impl.WebModelPublisherModule]]></ATT>
       <ATT name="State">SoModuleStateActivated</ATT>

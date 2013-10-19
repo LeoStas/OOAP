@@ -92,7 +92,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="AssociationEnd" uid="621bcd48-7b61-49d5-97f1-c34202c5bb62"/>
+          <ID name="" mc="AssociationEnd" uid="75c342c4-27c3-420f-acc8-46f96cb243d4"/>
           <PID name="Пользователь" mc="Actor" uid="46198a1a-9a95-4f9e-8aab-3154b6556e70"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
@@ -115,7 +115,7 @@
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="AssociationEnd" uid="f4a0e060-86b9-4fea-abea-f0afa2da6977"/>
+                <ID name="" mc="AssociationEnd" uid="c5e6bf75-fd04-4913-8982-fc5af51f30f5"/>
                 <PID name="Пользователь" mc="Actor" uid="46198a1a-9a95-4f9e-8aab-3154b6556e70"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
@@ -134,11 +134,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="AssociationEnd" uid="621bcd48-7b61-49d5-97f1-c34202c5bb62"/>
+                    <COMPID name="" mc="AssociationEnd" uid="75c342c4-27c3-420f-acc8-46f96cb243d4"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Association" uid="48283bed-765b-463c-ae33-a08a7fb323c6"/>
+                      <ID name="" mc="Association" uid="3b4d0d61-658b-4aeb-9901-c5540724d6c6"/>
                       <PID name="Пользователь" mc="Actor" uid="46198a1a-9a95-4f9e-8aab-3154b6556e70"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
@@ -152,7 +152,7 @@
             </COMP>
             <COMP relation="Association">
               <OBJECT>
-                <ID name="" mc="Association" uid="48283bed-765b-463c-ae33-a08a7fb323c6"/>
+                <ID name="" mc="Association" uid="3b4d0d61-658b-4aeb-9901-c5540724d6c6"/>
                 <PID name="Пользователь" mc="Actor" uid="46198a1a-9a95-4f9e-8aab-3154b6556e70"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>

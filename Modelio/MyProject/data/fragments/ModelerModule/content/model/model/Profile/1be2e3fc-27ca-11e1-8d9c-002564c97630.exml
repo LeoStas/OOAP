@@ -3,6 +3,7 @@
   <DEPS>
     <ID name="Analyst" mc="Profile" uid="1be2e3fc-27ca-11e1-8d9c-002564c97630"/>
     <COMPID name="" mc="MetaclassReference" uid="e884c108-f73e-11e1-8cf3-002564c97630"/>
+    <COMPID name="" mc="MetaclassReference" uid="2d98d6ca-5644-418a-9bae-94b5362d3c51"/>
     <COMPID name="+influence" mc="Stereotype" uid="01ec12fc-0000-0247-0000-000000000000"/>
     <COMPID name="-influence" mc="Stereotype" uid="01ec12fc-0000-024c-0000-000000000000"/>
     <COMPID name="antonym" mc="Stereotype" uid="01ec12fc-0000-0233-0000-000000000000"/>
@@ -73,6 +74,7 @@
         <COMPID name="kind-of" mc="Stereotype" uid="01ec1228-0000-12f8-0000-000000000000"/>
       </COMP>
       <COMP relation="OwnedReference">
+        <COMPID name="" mc="MetaclassReference" uid="2d98d6ca-5644-418a-9bae-94b5362d3c51"/>
         <COMPID name="" mc="MetaclassReference" uid="e884c108-f73e-11e1-8cf3-002564c97630"/>
       </COMP>
     </DEPENDENCIES>

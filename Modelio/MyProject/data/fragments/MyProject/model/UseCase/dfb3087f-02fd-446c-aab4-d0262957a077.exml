@@ -2,6 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Войти в систему" version="3">
   <DEPS>
     <ID name="Войти в систему" mc="UseCase" uid="dfb3087f-02fd-446c-aab4-d0262957a077"/>
+    <COMPID name="Activity" mc="Activity" uid="352f3795-b850-41b0-8679-24557b8417d5"/>
     <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
     <FOREIGNID name="description" mc="NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
     <FOREIGNID name="exception" mc="NoteType" uid="00bc0b8c-0000-2519-0000-000000000000"/>
@@ -22,6 +23,9 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Activity" mc="Activity" uid="352f3795-b850-41b0-8679-24557b8417d5"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Note" uid="b98c7976-f5aa-4ef4-b667-bc294e228d6f"/>

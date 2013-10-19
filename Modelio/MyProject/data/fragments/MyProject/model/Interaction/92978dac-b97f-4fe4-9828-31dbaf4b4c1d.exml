@@ -3,9 +3,9 @@
   <DEPS>
     <ID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
     <COMPID name="Initialize" mc="SequenceDiagram" uid="5ff5a712-574c-4d07-a9df-1babf4df33cb"/>
+    <EXTID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
     <EXTID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
     <EXTID name="DriverManager" mc="Class" uid="2e6bcb70-8094-4ee8-a73d-e60455a13462"/>
-    <EXTID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
   </DEPS>
   <OBJECT>
     <ID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
@@ -518,8 +518,8 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="drMan" mc="BindableInstance" uid="b7001e85-6b59-44d7-a1ef-507d087f4b16"/>
-                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ID name="drMan" mc="BindableInstance" uid="88781acd-9189-4af6-9225-3e0f3ca983c7"/>
+                <PID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -535,8 +535,8 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="db" mc="BindableInstance" uid="91eab8ec-6601-42fd-92f2-7cf024f25c60"/>
-                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ID name="db" mc="BindableInstance" uid="46cb025c-e5ce-4dd2-a34d-6aecd0ba97dc"/>
+                <PID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -552,8 +552,8 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="c" mc="BindableInstance" uid="2f7600cf-e0c5-4c98-ac2f-d5560871c62a"/>
-                <PID name="RDBMS-JDBC" mc="Package" uid="bb773d29-1b34-4dd6-9d70-2dfcd5ce44b5"/>
+                <ID name="c" mc="BindableInstance" uid="391f34ab-1e4d-4d8a-b157-1a0a60aa9338"/>
+                <PID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -572,7 +572,61 @@
             <ATT name="Name"><![CDATA[locals]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="db" mc="BindableInstance" uid="46cb025c-e5ce-4dd2-a34d-6aecd0ba97dc"/>
+                <PID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[db]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="DBClass" mc="Class" uid="12341cb0-60fd-49a0-82a3-4392f45ccb0c"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="drMan" mc="BindableInstance" uid="88781acd-9189-4af6-9225-3e0f3ca983c7"/>
+                <PID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[drMan]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="DriverManager" mc="Class" uid="2e6bcb70-8094-4ee8-a73d-e60455a13462"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="c" mc="BindableInstance" uid="391f34ab-1e4d-4d8a-b157-1a0a60aa9338"/>
+                <PID name="Initialize" mc="Interaction" uid="92978dac-b97f-4fe4-9828-31dbaf4b4c1d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[c]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Connection" mc="Interface" uid="ac7e9519-88d4-4295-8120-9f44559f84d9"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">

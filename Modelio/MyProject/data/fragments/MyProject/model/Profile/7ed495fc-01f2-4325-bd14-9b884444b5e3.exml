@@ -10,6 +10,7 @@
     <COMPID name="fk" mc="Stereotype" uid="a28d3983-6448-4745-ba1e-a7dce9e8f7ec"/>
     <COMPID name="identifying" mc="Stereotype" uid="2853381d-81de-417d-aa4b-e2ae7ead5216"/>
     <COMPID name="index" mc="Stereotype" uid="69c70fba-9dad-438b-8493-ff2e39b30937"/>
+    <COMPID name="interface realization" mc="Stereotype" uid="d64b7f45-ea64-44d9-94b9-5663db76f2fa"/>
     <COMPID name="layer" mc="Stereotype" uid="d8e7d1c9-1729-4d52-8ff9-8835e1cd3ebf"/>
     <COMPID name="mechanism" mc="Stereotype" uid="e564d1ab-1abf-4bf4-a79f-e5bd232bbad4"/>
     <COMPID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
@@ -62,6 +63,7 @@
         <COMPID name="unique" mc="Stereotype" uid="e414fccd-ce3a-44dc-be90-ccb90f627b1c"/>
         <COMPID name="stored proc" mc="Stereotype" uid="10b4f8d0-3d79-4681-b1d3-d318a0841f1e"/>
         <COMPID name="check" mc="Stereotype" uid="9bea1f91-1660-47d8-a2dd-120192f193d2"/>
+        <COMPID name="interface realization" mc="Stereotype" uid="d64b7f45-ea64-44d9-94b9-5663db76f2fa"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
