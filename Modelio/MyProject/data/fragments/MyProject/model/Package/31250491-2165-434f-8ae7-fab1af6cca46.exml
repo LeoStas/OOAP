@@ -11,7 +11,10 @@
     <COMPID name="RegisterController" mc="Class" uid="0f3422ea-1bd8-40bd-9987-a68a46cd3b58"/>
     <COMPID name="RegisterForm" mc="Class" uid="8692802b-dc80-4236-b896-749122b49eda"/>
     <COMPID name="Seat" mc="Class" uid="6e44f411-a4a4-4ed0-abff-fabef8ae3a68"/>
+    <COMPID name="SelectTicketController" mc="Class" uid="9e1e6621-4595-4186-93ac-7b3ea3331b0f"/>
+    <COMPID name="SelectTicketForm" mc="Class" uid="1d572cbf-3486-44d3-94c8-c70a18c47007"/>
     <COMPID name="Ticket" mc="Class" uid="499266e6-3768-41ae-88a6-facb5b472e48"/>
+    <COMPID name="TicketDatabaseSystem" mc="Class" uid="cdaaf275-4c43-44c2-9f11-233b144ab061"/>
     <COMPID name="Use Case Realizations" mc="Package" uid="380a78f0-7e64-4dcc-a938-d2d6156b065d"/>
     <COMPID name="User" mc="Class" uid="83fed3cb-0508-44ee-83a3-ea371c6d4b35"/>
     <EXTID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
@@ -41,6 +44,9 @@
         <COMPID name="User" mc="Class" uid="83fed3cb-0508-44ee-83a3-ea371c6d4b35"/>
         <COMPID name="RegisterForm" mc="Class" uid="8692802b-dc80-4236-b896-749122b49eda"/>
         <COMPID name="RegisterController" mc="Class" uid="0f3422ea-1bd8-40bd-9987-a68a46cd3b58"/>
+        <COMPID name="SelectTicketForm" mc="Class" uid="1d572cbf-3486-44d3-94c8-c70a18c47007"/>
+        <COMPID name="TicketDatabaseSystem" mc="Class" uid="cdaaf275-4c43-44c2-9f11-233b144ab061"/>
+        <COMPID name="SelectTicketController" mc="Class" uid="9e1e6621-4595-4186-93ac-7b3ea3331b0f"/>
       </COMP>
       <LINK relation="Extension">
         <ID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
