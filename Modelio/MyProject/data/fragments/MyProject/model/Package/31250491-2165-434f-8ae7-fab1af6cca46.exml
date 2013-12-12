@@ -4,8 +4,10 @@
     <ID name="Analysis Model" mc="Package" uid="31250491-2165-434f-8ae7-fab1af6cca46"/>
     <COMPID name="CROrderController" mc="Class" uid="c44f8ca7-9a4f-439e-bf84-45d481a47ec5"/>
     <COMPID name="CROrderForm" mc="Class" uid="f23c9b52-b6ff-4ebb-85d5-0c9b0526d15f"/>
+    <COMPID name="Cashier" mc="Class" uid="9e17d2c3-1582-4bfc-a10a-eaae0e115365"/>
     <COMPID name="Client" mc="Class" uid="ffb6c8a8-a9e0-4042-828c-eb91359b83a5"/>
     <COMPID name="DeliveryInfo" mc="Class" uid="a5f661f3-b7e7-4e8b-8205-d0e511a6d2b0"/>
+    <COMPID name="DeliveryOffice" mc="Class" uid="7c65a310-bb2f-4564-85b1-c40ecb3300aa"/>
     <COMPID name="Key Abstractions" mc="ClassDiagram" uid="d6aa2590-3d0a-4512-9277-e6281a607e6f"/>
     <COMPID name="LoginController" mc="Class" uid="b3f44957-21e1-4720-b499-6cf9166c70c0"/>
     <COMPID name="LoginForm" mc="Class" uid="658a1ce8-b0e3-498f-8846-6e72e2556fc1"/>
@@ -13,6 +15,8 @@
     <COMPID name="OrderCancelController" mc="Class" uid="c6ea3c70-5df6-4c14-902e-dbede6c2c227"/>
     <COMPID name="OrderCancelForm" mc="Class" uid="fadd73eb-37d2-4c8e-937e-7ec1a16cb0a4"/>
     <COMPID name="OrderDatabaseSystem" mc="Class" uid="d060c808-7c34-4dcb-8d9c-406281faaf15"/>
+    <COMPID name="PerformOrderController" mc="Class" uid="42116ad7-d878-4ad0-afea-dd77fef2c78c"/>
+    <COMPID name="PerformOrderForm" mc="Class" uid="dd8deeea-3dec-477e-a4ae-596429380524"/>
     <COMPID name="RegisterController" mc="Class" uid="0f3422ea-1bd8-40bd-9987-a68a46cd3b58"/>
     <COMPID name="RegisterForm" mc="Class" uid="8692802b-dc80-4236-b896-749122b49eda"/>
     <COMPID name="Seat" mc="Class" uid="6e44f411-a4a4-4ed0-abff-fabef8ae3a68"/>
@@ -57,6 +61,10 @@
         <COMPID name="CROrderController" mc="Class" uid="c44f8ca7-9a4f-439e-bf84-45d481a47ec5"/>
         <COMPID name="OrderCancelForm" mc="Class" uid="fadd73eb-37d2-4c8e-937e-7ec1a16cb0a4"/>
         <COMPID name="OrderCancelController" mc="Class" uid="c6ea3c70-5df6-4c14-902e-dbede6c2c227"/>
+        <COMPID name="PerformOrderForm" mc="Class" uid="dd8deeea-3dec-477e-a4ae-596429380524"/>
+        <COMPID name="PerformOrderController" mc="Class" uid="42116ad7-d878-4ad0-afea-dd77fef2c78c"/>
+        <COMPID name="Cashier" mc="Class" uid="9e17d2c3-1582-4bfc-a10a-eaae0e115365"/>
+        <COMPID name="DeliveryOffice" mc="Class" uid="7c65a310-bb2f-4564-85b1-c40ecb3300aa"/>
       </COMP>
       <LINK relation="Extension">
         <ID name="model" mc="Stereotype" uid="f75794cc-275e-4a8a-917f-2d05de475859"/>
