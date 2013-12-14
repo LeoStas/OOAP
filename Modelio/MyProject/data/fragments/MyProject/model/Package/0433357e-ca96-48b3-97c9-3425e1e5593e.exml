@@ -2,6 +2,12 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Deployment View" version="3">
   <DEPS>
     <ID name="Deployment View" mc="Package" uid="0433357e-ca96-48b3-97c9-3425e1e5593e"/>
+    <COMPID name="BookingServer" mc="Node" uid="6f2d9ca9-7f00-4b9b-adcb-fe45dbf8f9d7"/>
+    <COMPID name="CassierDesktop" mc="Node" uid="19c05f72-d01d-488f-80d4-a5fe32dc365f"/>
+    <COMPID name="ClientDesktop" mc="Node" uid="8fe5a973-686a-463e-9776-519d3d341d4b"/>
+    <COMPID name="DeliveryOffice" mc="Node" uid="c26f6995-e715-4d14-b331-b00a8b02723a"/>
+    <COMPID name="Deployment View (diagram)" mc="DeploymentDiagram" uid="27ec43f3-86d0-4449-ab87-3a5755389797"/>
+    <COMPID name="Printer" mc="Node" uid="ef9ec282-b1b8-4626-a921-ad8c72e835ea"/>
     <EXTID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
   </DEPS>
   <OBJECT>
@@ -17,9 +23,19 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="ClientDesktop" mc="Node" uid="8fe5a973-686a-463e-9776-519d3d341d4b"/>
+        <COMPID name="CassierDesktop" mc="Node" uid="19c05f72-d01d-488f-80d4-a5fe32dc365f"/>
+        <COMPID name="BookingServer" mc="Node" uid="6f2d9ca9-7f00-4b9b-adcb-fe45dbf8f9d7"/>
+        <COMPID name="DeliveryOffice" mc="Node" uid="c26f6995-e715-4d14-b331-b00a8b02723a"/>
+        <COMPID name="Printer" mc="Node" uid="ef9ec282-b1b8-4626-a921-ad8c72e835ea"/>
+      </COMP>
       <LINK relation="Extension">
         <ID name="architectural view" mc="Stereotype" uid="d89a3286-3680-49a0-9090-29c181a879ec"/>
       </LINK>
+      <COMP relation="Product">
+        <COMPID name="Deployment View (diagram)" mc="DeploymentDiagram" uid="27ec43f3-86d0-4449-ab87-3a5755389797"/>
+      </COMP>
     </DEPENDENCIES>
   </OBJECT>
 </EXT>
